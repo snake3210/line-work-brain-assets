@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#087a42">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="LINE Work Brain">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/line-work-brain-icon.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="assets/line-work-brain-icon.png">
+    <title>LINE Work Brain</title>
+    <style>
+      :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+      body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: #121212; color: #e8f1eb; }
+      main { width: min(28rem, calc(100% - 3rem)); text-align: center; }
+      img { width: 96px; height: 96px; border-radius: 24px; }
+      h1 { margin: 1rem 0 .5rem; font-size: 1.55rem; }
+      p { color: #aebbb3; line-height: 1.65; }
+      a { display: block; margin-top: 1.5rem; padding: 1rem; border-radius: .85rem; background: #06c755; color: #06160d; font-weight: 800; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="assets/line-work-brain-icon.png" alt="LINE Work Brain">
+      <h1>LINE Work Brain</h1>
+      <p>請從這個入口加到手機主畫面，即可使用專屬圖示。</p>
+      <a id="openWorkspace" href="https://script.google.com/macros/s/AKfycbxe7a09LCvjcG-56fgN0ZWzG1MSqR9vHIDzhBmIVmxpTERKpJB2DlbFueJZWfbgIhfeWw/exec">開啟 LINE Work Brain</a>
+    </main>
+    <script>
+      if (new URLSearchParams(location.search).get('launch') === '1') {
+        location.replace(document.getElementById('openWorkspace').href);
+      }
+    </script>
+  </body>
+</html>

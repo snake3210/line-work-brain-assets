@@ -1,6 +1,8 @@
 {
   "name": "LINE Work Brain",
   "short_name": "Work Brain",
+  "start_url": "./?launch=1",
+  "scope": "./",
   "icons": [
     {
       "src": "/line-work-brain/assets/line-work-brain-icon.png",
