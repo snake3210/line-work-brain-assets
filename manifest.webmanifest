@@ -1,6 +1,8 @@
 {
   "name": "LINE Work Brain",
   "short_name": "Work Brain",
+  "id": "/line-work-brain-assets/",
+  "description": "LINE Work Brain 手機入口",
   "start_url": "./?launch=1",
   "scope": "./",
   "icons": [

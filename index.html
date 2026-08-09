@@ -28,6 +28,9 @@
       <a id="openWorkspace" href="https://script.google.com/macros/s/AKfycbxe7a09LCvjcG-56fgN0ZWzG1MSqR9vHIDzhBmIVmxpTERKpJB2DlbFueJZWfbgIhfeWw/exec">開啟 LINE Work Brain</a>
     </main>
     <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      }
       if (new URLSearchParams(location.search).get('launch') === '1') {
         location.replace(document.getElementById('openWorkspace').href);
       }
