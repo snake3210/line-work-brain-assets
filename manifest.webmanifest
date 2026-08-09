@@ -1,0 +1,15 @@
+{
+  "name": "LINE Work Brain",
+  "short_name": "Work Brain",
+  "icons": [
+    {
+      "src": "/line-work-brain/assets/line-work-brain-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#087a42",
+  "background_color": "#121212",
+  "display": "standalone"
+}
