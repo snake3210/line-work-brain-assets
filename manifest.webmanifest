@@ -5,8 +5,8 @@
   "scope": "./",
   "icons": [
     {
-      "src": "/line-work-brain/assets/line-work-brain-icon.png",
-      "sizes": "512x512",
+      "src": "/line-work-brain-assets/assets/line-work-brain-icon.png",
+      "sizes": "1254x1254",
       "type": "image/png",
       "purpose": "any maskable"
     }
